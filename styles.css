@@ -26,6 +26,8 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    opacity: 0; /* Start with the body hidden */
+    animation: fadeIn 1.5s ease-in-out 0.5s forwards;
 }
 
 /* Header styles */
@@ -172,6 +174,14 @@ footer {
     margin-top: 20px;
     transition: .8s ease-in-out;
     transform: scale(.8);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Responsive design for smaller screens */
