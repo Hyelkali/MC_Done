@@ -129,9 +129,6 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 }
-section:nth-child(1){
-    margin-top: -20px;
-}
 
 section {
     background-color: #fff;
@@ -159,7 +156,9 @@ section {
     display: flex;
     justify-content: space-between;
 }
-
+#bio{
+    margin-top: -28px;
+}
 #bio ul {
     margin: 0;
     padding: 0;
@@ -225,7 +224,7 @@ footer {
         position: sticky;
         transform: translateX(15px);
         transform: translateY(-165px);
-
+        width: 90%;
         top: 8%; /* Stick the navigation at 50% of the viewport height */
         z-index: 1000;
         padding: 16px; /* Padding for the navigation items */
@@ -283,7 +282,6 @@ footer {
         position: sticky;
         transform: translateX(55px);
         transform: translateY(-265px);
-
         top: 8%; /* Stick the navigation at 50% of the viewport height */
         z-index: 1000;
         padding: 16px; /* Padding for the navigation items */
