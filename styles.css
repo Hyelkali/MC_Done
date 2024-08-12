@@ -19,7 +19,7 @@ body {
     background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     color: #333;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ body {
     justify-content: center;
     position: relative;
     opacity: 0; /* Start with the body hidden */
-    animation: fadeIn .9s ease-in-out 0.5s forwards;
+    animation: fadeIn 1.5s ease-in-out 0.8s forwards;
 }
 
 /* Header styles */
@@ -137,8 +137,8 @@ section {
     border-radius: 5px;
     font-size: 20px;
     transform: translateY(4) scale(1); /* Initialize transform */
-    
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin-top: -24px;
+    transition: 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 1;
     padding: 40px;
 }
@@ -155,7 +155,7 @@ section ul li{
     padding: 18px;
 }
 section:hover {
-    transition: 1s ease-in-out, opacity .3s ease-in-out;
+    transition: .8s ease-in-out, opacity .3s ease-in-out;
     transform: translateY(1.5) scale(1.2); /* Add hover scale effect */
 }
 section .school{
