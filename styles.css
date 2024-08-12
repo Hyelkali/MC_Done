@@ -118,7 +118,9 @@ nav ul li a{
     font-size: 20px;
 }
 
-
+nav:hover{
+    transform: scale (1.2);
+}
 /* Main content styles */
 main {
     width: 100%;
@@ -132,7 +134,8 @@ section {
     margin: 20px 0;
     border-radius: 5px;
     font-size: 20px;
-    transform: translateY(0); /* Initialize transform */
+    transform: translateY(4) scale(1); /* Initialize transform */
+    
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 1;
     padding: 40px;
@@ -150,7 +153,8 @@ section ul li{
     padding: 18px;
 }
 section:hover {
-    transform: translateY(1.5); /* Add hover scale effect */
+    transition: 1s ease-in-out, opacity .3s ease-in-out;
+    transform: translateY(1.5) scale(1.2); /* Add hover scale effect */
 }
 section .school{
     font-size: 26px;
@@ -166,6 +170,8 @@ footer {
     background-color: #333;
     color: #fff;
     margin-top: 20px;
+    transition: .8s ease-in-out;
+    transform: scale(.8);
 }
 
 /* Responsive design for smaller screens */
