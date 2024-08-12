@@ -27,7 +27,7 @@ body {
     justify-content: center;
     position: relative;
     opacity: 0; /* Start with the body hidden */
-    animation: fadeIn 1.5s ease-in-out 0.5s forwards;
+    animation: fadeIn .9s ease-in-out 0.5s forwards;
 }
 
 /* Header styles */
