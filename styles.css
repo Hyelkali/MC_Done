@@ -238,6 +238,9 @@ footer {
         padding: 0 10px 15px 28px;
         backdrop-filter: blur(50px);
     }
+    .home{
+        margin-bottom: 50px;
+    }
     
     #bio{
         margin-top: -5px;
@@ -288,11 +291,11 @@ footer {
         width: 90px;
         overflow: hidden;
         padding: 16px;
-        transform: translateY(-270px);
+        transform: translateY(-70px);
     }
     nav ul li {
         top: 200em;
-        transform: translateY(900px);
+        transform: translateY(60px);
         transform: translateX(-28px);
         font-size: 20px;
         padding: 0 6px 6px 18px;
