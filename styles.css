@@ -124,9 +124,6 @@ nav ul li a {
     font-size: 20px;
 }
 
-nav:hover {
-    transform: scale(1.1); /* Add slight scaling on hover */
-}
 /* Main content styles */
 main {
     width: 100%;
@@ -184,6 +181,10 @@ section .school{
 
 }
 
+.about{
+    margin-top: -130px;
+}
+
 /* Footer styles */
 footer {
     text-transform: uppercase;
@@ -219,23 +220,28 @@ footer {
         align-items: flex-start;
     }
     nav {
-        position: sticky;
         right: 0; /* Align to the right side */
+        margin-top: -150px;
         transform: translateY(-330em);
-        transform: translateX(5px);
-        width: 120px;
+        transform: translateX(-10px);
+        width: 150px;
         overflow: hidden;
         padding: 16px;
     }
+    .about{
+        margin-top: -5px;
+    }
     nav ul li {
+        position: sticky;
         margin-bottom: 8px;
         font-size: 22px;
         padding: 0 10px 15px 28px;
         backdrop-filter: blur(50px);
-        transform: translateX(1px);
     }
-
-
+    
+    #bio{
+        margin-top: -5px;
+    }
     main{
         display: flex;
         flex-direction: column;
