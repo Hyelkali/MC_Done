@@ -296,7 +296,7 @@ footer {
     nav ul li {
         top: 200em;
         transform: translateY(60px);
-        transform: translateX(-28px);
+        transform: translateX(-58px);
         font-size: 20px;
         padding: 0 6px 6px 18px;
         backdrop-filter: blur(50px);
