@@ -88,25 +88,18 @@ address{
 
 nav {
     padding: 16px;
-    width: 180px;
-    position: sticky;
-    top: -50em; /* Stick to the top of the viewport */
-    transform: translateX(50px);
-    transform: translateY(-120px);
-    right: 0; /* Align to the right side */
-    margin-left: auto; /* Push nav to the right */
-    z-index: 1000;
-    overflow: hidden;
+    background-color: #fff;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
     padding: 0;
-    color: #186bb6; /* Text color for navigation items */
+    color: #b65f18; /* Text color for navigation items */
 }
 
 nav ul li {
-    margin-bottom: 8px;
+    margin-bottom: 160px;
     font-size: 20px;
     padding: 10px 10px 10px 24px;
     backdrop-filter: blur(50px);
@@ -215,28 +208,8 @@ footer {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav {
-        right: 0; /* Align to the right side */
-        margin-top: -150px;
-        transform: translateY(-330em);
-        transform: translateX(-10px);
-        width: 150px;
-        overflow: hidden;
-        padding: 16px;
-    }
     .about{
         margin-top: -5px;
-    }
-    nav ul li {
-        position: sticky;
-        margin-bottom: 8px;
-        font-size: 22px;
-        padding: 0 10px 15px 28px;
-        backdrop-filter: blur(50px);
     }
     .home{
         margin-bottom: 50px;
@@ -278,33 +251,16 @@ footer {
 }
 
 @media (max-width: 480px) {
-  
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-    nav {
-        position: sticky;
-        right: 0; /* Align to the right side */
-        width: 90px;
-        overflow: hidden;
-        padding: 16px;
-        transform: translateY(-70px);
-    }
+     
     nav ul li {
-        top: 200em;
-        transform: translateY(60px);
-        transform: translateX(-58px);
-        font-size: 20px;
-        padding: 0 6px 6px 18px;
-        backdrop-filter: blur(50px);
-        letter-spacing: 2px;
-        width: 130px;
+        margin-bottom: -80px;
+        padding: 8px;
     }
-    
-
+    nav ul li a{
+        margin: 0;
+        padding: 0;
+    }
+        
     .profileName {
         font-size: .8rem;
         h1{
