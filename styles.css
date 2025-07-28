@@ -1,134 +1,116 @@
-/* General Styles */
+/* styles.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    margin: 0;
-    overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-.progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background-color: #ff6347;
-    z-index: 1000;
-    transition: width 0.2s ease-out;
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ff6347;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease-out;
-    z-index: 1001;
+.profile-name h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
 }
 
-/* Bento-Grid */
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.profile-name p {
+  font-size: 1rem;
+  color: #666;
 }
 
-.bento-item {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.bento-item:hover {
-    transform: translateY(-10px) rotateX(10deg) rotateY(10deg);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 10px;
 }
 
-.bento-item.large {
-    grid-column: span 2;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-.glare {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
-    transition: opacity 0.3s ease;
-    opacity: 0;
+nav ul li {
+  margin: 0 20px;
 }
 
-.bento-item:hover .glare {
-    opacity: 1;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-/* Timeline */
-.timeline {
-    padding: 50px 20px;
+nav ul li a:hover {
+  color: #ff6347;
 }
 
-.timeline-item {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 40px;
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: all 0.5s ease-out;
+/* Main content */
+main {
+  padding: 20px;
 }
 
-.timeline-item:nth-child(even) {
-    justify-content: flex-end;
-    transform: translateX(100px);
+section {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-item.visible {
-    opacity: 1;
-    transform: translateX(0);
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-    animation: slideInRight 0.5s forwards;
+/* Bio section */
+.info {
+  display: flex;
+  justify-content: space-between;
 }
 
-.timeline-item:nth-child(odd) .timeline-content {
-    animation: slideInLeft 0.5s forwards;
+/* Skills section */
+.doings {
+  display: flex;
+  gap: 20px;
 }
 
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.does {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.timeline-content {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    width: 45%;
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
