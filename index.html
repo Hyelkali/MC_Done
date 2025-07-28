@@ -3,55 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Animated Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Michael Joseph - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="progress-bar"></div>
-    <div class="cursor"></div>
-
-    <main>
-        <section class="bento-grid">
-            <div class="bento-item large">
-                <div class="glare"></div>
-                <h2>Zigzag Timeline</h2>
-                <p>Content flows left-right-left in a dynamic timeline.</p>
-            </div>
-            <div class="bento-item medium">
-                <div class="glare"></div>
-                <h3>Bento Grid</h3>
-                <p>Variable sizes for visual hierarchy.</p>
-            </div>
-            <div class="bento-item medium">
-                <div class="glare"></div>
-                <h3>Glassmorphism</h3>
-                <p>Backdrop blur with transparency.</p>
-            </div>
-            <div class="bento-item large">
-                <div class="glare"></div>
-                <h2>Advanced Scroll Animations</h2>
-                <p>Smooth, performance-optimized animations.</p>
-            </div>
-        </section>
-
-        <section class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Synchronized Animations</h3>
-                    <p>Text and visuals animate from opposite directions.</p>
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <img src="images/MC01.jfif" alt="Michael Joseph" class="profile-img">
+                <div class="profile-info">
+                    <h1>Michael Joseph</h1>
+                    <p>Web Developer</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Scroll-Triggered</h3>
-                    <p>Each section animates as you scroll into view.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/4.1.17/framer-motion.cjs.js"></script>
-    <script src="index.js"></script>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a passionate web developer with a focus on creating modern and interactive web experiences. I enjoy working with new technologies and constantly learning.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Project One</h3>
+                        <p>A brief description of the first project.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project Two</h3>
+                        <p>A brief description of the second project.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project Three</h3>
+                        <p>A brief description of the third project.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:michaelibitein@gmail.com">michaelibitein@gmail.com</a></p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
