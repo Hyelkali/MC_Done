@@ -1,116 +1,81 @@
 /* styles.css */
 
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Base styles */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
-  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
 header {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
-.profile-name h1 {
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
 }
 
-.profile-name p {
-  font-size: 1rem;
-  color: #666;
-}
-
-.profile-image img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Navigation */
-nav {
-  background-color: #333;
-  padding: 10px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: #fff;
+nav a {
+  color: #e0e0e0;
   text-decoration: none;
-  font-size: 1.1rem;
+  margin-left: 20px;
   transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #ff6347;
+nav a:hover {
+  color: #bb86fc;
 }
 
 /* Main content */
 main {
-  padding: 20px;
-}
-
-section {
-  background-color: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
 }
 
 h2 {
   font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #bb86fc;
+  padding-bottom: 10px;
 }
 
-/* Bio section */
-.info {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Skills section */
-.doings {
-  display: flex;
+/* Grid layout for projects */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-.does {
-  flex: 1;
-  padding: 15px;
-  border: 1px solid #ddd;
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
   border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
